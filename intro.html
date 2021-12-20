@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <!--AngularJS is a JavaScript framework written in JavaScript.
+<!--AngularJS is a JavaScript framework written in JavaScript.
         AngularJS version 1.0 was released in 2012.
-         Miško Hevery, a Google employee, started to work with AngularJS in 2009.
-         The thinking turned out very well, and the project is now officially supported by Google.
+        Miško Hevery, a Google employee, started to work with AngularJS in 2009.
+        The thinking turned out very well, and the project is now officially supported by Google.
         AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions.
-    AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag-->
+        AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag
+        AngularJS directives are HTML attributes with an data-ng prefix.-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 <body>
-<div data-ng-app="" data-ng-init="FirstName='Nagappan'"> <!-- Thehe directive data-ng-app is denotoed as its AngularJS that the <div> element is the "owner" of an AngularJS application.
+    <div data-ng-app="" data-ng-init="FirstName='Nagappan'">
+        <!-- Thehe directive data-ng-app is denotoed as its AngularJS that the <div> element is the "owner" of an AngularJS application.
     The directive data-ng-init is denoted as the application have initialize the variables -->
-<p><input data-ng-model="LastName"></p><!-- The directive data-ng-model is bind the value of the HTML controls -->
-<p>The First Name is: <span data-ng-bind="FirstName"></span></p><!-- The directive data-ng-bind id bind the value of HTML Display view -->
-<p>The Last Name is: <span data-ng-bind="LastName"></span></p>
-</div>
+        <p><input data-ng-model="LastName"></p>
+        <!-- The directive data-ng-model is bind the value of the HTML controls -->
+        <p>The First Name is: <span data-ng-bind="FirstName"></span></p>
+        <!-- The directive data-ng-bind id bind the value of HTML Display view -->
+        <p>The Last Name is: <span data-ng-bind="LastName"></span></p>
+    </div>
 </body>
+
 </html>
