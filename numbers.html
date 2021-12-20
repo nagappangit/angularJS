@@ -4,8 +4,9 @@
 
 <body>
     <div ng-app="" ng-init="Quantity=72;Price=120">
-
+        <!--AngularJS numbers are like JavaScript numbers-->
         <p>Total Amount Rs.: {{ Quantity * Price }}/ Only</p>
+        <p>Total Amount Rs.: <span data-ng-bind="Quantity * Price"></span>/ Only</p>
 
     </div>
 </body>
