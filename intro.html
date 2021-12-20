@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div data-ng-app="" data-ng-init="FirstName='Nagappan'"> <!-- Thehe directive data-ng-app is denotoed as its the angulerJS application, The directive data-ng-init is denoted as the application have initialize the variables -->
+<p><input data-ng-model="LastName"></p><!-- The directive data-ng-model is bind the value of the HTML controls -->
+<p>The First Name is: <span data-ng-bind="FirstName"></span></p><!-- The directive data-ng-bind id bind the value of HTML Display view -->
+<p>The Last Name is: <span data-ng-bind="LastName"></span></p>
+</div>
+</body>
+</html>
